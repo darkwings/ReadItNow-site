@@ -1,0 +1,386 @@
+/* ============================================================
+   READ IT NOW — WEBSITE STYLES
+   Palette and spacing mirrors the iOS app exactly.
+   ============================================================ */
+
+/* --- Reset ------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* --- Design Tokens ----------------------------------------- */
+:root {
+  --color-primary:        #8FAE8B;
+  --color-secondary:      #F5F1E8;
+  --color-accent:         #C4A77D;
+  --color-bg:             #FAFAF8;
+  --color-text:           #333333;
+  --color-text-secondary: #666666;
+  --color-footer-bg:      #333333;
+  --color-feature-icon-green: rgba(143, 174, 139, 0.12);
+  --color-feature-icon-cream: rgba(196, 167, 125, 0.12);
+
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  36px;
+
+  --shadow-sm:   0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-hero: 0 20px 60px rgba(143, 174, 139, 0.2);
+
+  --breakpoint: 768px;
+}
+
+/* --- Base -------------------------------------------------- */
+body {
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* --- Typography -------------------------------------------- */
+h1 { font-size: 42px; font-weight: 800; line-height: 1.15; letter-spacing: -0.5px; }
+h2 { font-size: 30px; font-weight: 800; }
+h3 { font-size: 16px; font-weight: 700; }
+
+/* --- NAV --------------------------------------------------- */
+.nav {
+  background: rgba(250, 250, 248, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  height: 56px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--color-text);
+}
+.nav-icon {
+  width: 32px; height: 32px;
+  background: linear-gradient(135deg, var(--color-primary), #6B8E68);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-icon img { width: 20px; height: 20px; }
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+.nav-links a {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--color-primary); }
+.lang-toggle {
+  display: flex;
+  background: var(--color-secondary);
+  border-radius: 20px;
+  padding: 3px;
+  gap: 2px;
+}
+.lang-btn {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: var(--font);
+}
+.lang-btn.active {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* --- FOOTER ------------------------------------------------ */
+footer {
+  background: var(--color-footer-bg);
+  color: #E8E4DF;
+  padding: 40px 24px;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.footer-links a { color: #A09A92; font-size: 14px; }
+.footer-links a:hover { color: var(--color-primary); }
+.footer-copy { font-size: 13px; color: #666; }
+
+/* --- SECTION COMMON --------------------------------------- */
+.section-label {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.section-sub {
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  margin-bottom: 48px;
+}
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+/* --- HERO -------------------------------------------------- */
+.hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 72px 24px 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-secondary);
+  border: 1px solid var(--color-accent);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.hero-title {
+  margin-bottom: 16px;
+}
+.hero-title span { color: var(--color-primary); }
+.hero-sub {
+  font-size: 17px;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+.appstore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #000;
+  color: #fff;
+  border-radius: var(--radius-md);
+  padding: 10px 20px;
+  width: fit-content;
+}
+.appstore-btn .as-icon { font-size: 22px; line-height: 1; }
+.appstore-btn .as-text { line-height: 1.2; }
+.appstore-btn .as-text small { display: block; font-size: 10px; opacity: 0.7; }
+.appstore-btn .as-text strong { font-size: 16px; font-weight: 700; }
+.hero-phone {
+  background: var(--color-secondary);
+  border: 3px solid var(--color-accent);
+  border-radius: var(--radius-xl);
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-hero);
+  position: relative;
+  overflow: hidden;
+}
+.hero-phone::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  width: 60px; height: 6px;
+  background: var(--color-accent);
+  border-radius: 3px;
+  opacity: 0.4;
+}
+.hero-phone img { width: 80%; height: 90%; object-fit: cover; border-radius: 20px; }
+.hero-phone-placeholder {
+  text-align: center;
+  color: var(--color-accent);
+  opacity: 0.6;
+}
+.hero-phone-placeholder .ph-icon { font-size: 48px; margin-bottom: 8px; }
+.hero-phone-placeholder p { font-size: 13px; font-weight: 600; }
+
+/* --- FEATURES --------------------------------------------- */
+.features { background: var(--color-secondary); padding: 64px 24px; }
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.feature-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.feature-icon {
+  width: 44px; height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.feature-card p { font-size: 14px; color: var(--color-text-secondary); margin-top: 6px; }
+
+/* --- SCREENSHOTS ------------------------------------------ */
+.screenshots { padding: 64px 0; }
+.screenshots .container { margin-bottom: 32px; }
+.screenshots-strip {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 0 24px 12px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.screenshots-strip::-webkit-scrollbar { display: none; }
+.screen-item {
+  flex: 0 0 160px;
+  height: 280px;
+  background: var(--color-secondary);
+  border: 2px solid #e0ddd8;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+.screen-item img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; }
+
+/* --- MINI HERO (support, privacy) ------------------------- */
+.mini-hero {
+  background: var(--color-secondary);
+  padding: 48px 24px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.mini-hero h1 { font-size: 36px; margin-bottom: 12px; }
+.mini-hero p { font-size: 17px; color: var(--color-text-secondary); }
+
+/* --- FAQ -------------------------------------------------- */
+.faq-section { padding: 56px 24px; }
+.faq-list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+details {
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+summary {
+  padding: 20px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after {
+  content: '+';
+  font-size: 20px;
+  color: var(--color-accent);
+  font-weight: 300;
+  flex-shrink: 0;
+}
+details[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 24px 20px; font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; }
+
+/* --- CONTACT ---------------------------------------------- */
+.contact-section {
+  background: var(--color-secondary);
+  padding: 56px 24px;
+  text-align: center;
+}
+.contact-section h2 { margin-bottom: 12px; }
+.contact-section p { color: var(--color-text-secondary); margin-bottom: 28px; }
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 15px;
+}
+.contact-btn:hover { background: #6B8E68; }
+.contact-note { margin-top: 16px; font-size: 13px; color: var(--color-text-secondary); }
+
+/* --- PRIVACY ---------------------------------------------- */
+.privacy-section { padding: 56px 24px; max-width: 720px; margin: 0 auto; }
+.privacy-section .last-modified {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 40px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0ddd8;
+}
+.privacy-section h2 { font-size: 20px; font-weight: 700; margin: 32px 0 12px; }
+.privacy-section p { font-size: 15px; color: var(--color-text-secondary); margin-bottom: 12px; line-height: 1.7; }
+.privacy-section a { color: var(--color-primary); text-decoration: underline; }
+
+/* --- LANG BLOCKS ------------------------------------------ */
+.lang-block[hidden] { display: none; }
+
+/* --- RESPONSIVE ------------------------------------------- */
+@media (max-width: 768px) {
+  h1 { font-size: 32px; }
+  h2 { font-size: 24px; }
+
+  .nav-links { display: none; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 48px 24px 40px;
+    gap: 32px;
+  }
+  .hero-phone { height: 260px; }
+
+  .features-grid { grid-template-columns: 1fr; }
+
+  .mini-hero h1 { font-size: 28px; }
+}
+
+/* --- FOUC PREVENTION -------------------------------------- */
+[data-lang="en"] .lang-block[data-lang="it"] { display: none; }
+[data-lang="en"] .lang-block[data-lang="en"] { display: block !important; }

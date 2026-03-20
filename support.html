@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supporto — Read It Now</title>
+  <meta name="description" content="Supporto per Read It Now — Domande frequenti e contatti.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){
+      try {
+        var l = localStorage.getItem('rin_lang');
+        if (l === 'en') document.documentElement.setAttribute('data-lang', 'en');
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-icon">
+        <img src="assets/app-icon.png" alt="Read It Now" onerror="this.parentElement.textContent='📚'">
+      </div>
+      Read It Now
+    </a>
+    <div class="nav-links">
+      <a href="support.html" data-i18n="nav_support">Supporto</a>
+      <a href="privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="it" onclick="setLang('it')">IT</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+  </nav>
+
+  <!-- MINI HERO -->
+  <div class="mini-hero">
+    <h1 data-i18n="support_title">Supporto</h1>
+    <p data-i18n="support_sub">Come possiamo aiutarti?</p>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container" style="max-width: 720px;">
+      <p class="section-label" data-i18n="faq_label">FAQ</p>
+      <h2 class="section-title" style="text-align:left;" data-i18n="faq_title">Domande frequenti</h2>
+    </div>
+    <div class="faq-list" style="margin-top: 32px;">
+
+      <details>
+        <summary><span data-i18n="faq_q1">Come aggiungo un libro alla mia libreria?</span></summary>
+        <div class="faq-answer">
+          <div class="lang-block" data-lang="it">
+            Puoi aggiungere un libro in due modi: usa la scheda <strong>Cerca</strong> per trovare un libro tramite Google Books e importarlo con un tocco, oppure vai su <strong>Libreria</strong> e tocca il pulsante "+" per inserire i dati manualmente.
+          </div>
+          <div class="lang-block" data-lang="en" hidden>
+            You can add a book in two ways: use the <strong>Search</strong> tab to find a book via Google Books and import it with one tap, or go to <strong>Library</strong> and tap the "+" button to enter the details manually.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span data-i18n="faq_q2">Come funzionano le sessioni di lettura?</span></summary>
+        <div class="faq-answer">
+          <div class="lang-block" data-lang="it">
+            Apri il dettaglio di un libro che stai leggendo e tocca <strong>Inizia sessione</strong>. Il timer partirà automaticamente. Al termine, inserisci la pagina a cui sei arrivato e salva. La sessione viene registrata nella cronologia del libro.
+          </div>
+          <div class="lang-block" data-lang="en" hidden>
+            Open a book you are currently reading and tap <strong>Start session</strong>. The timer will start automatically. When done, enter the page you reached and save. The session is recorded in the book's history.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span data-i18n="faq_q3">I miei dati si sincronizzano tra dispositivi?</span></summary>
+        <div class="faq-answer">
+          <div class="lang-block" data-lang="it">
+            Sì, se hai attivato iCloud sul tuo dispositivo la libreria si sincronizza automaticamente tra tutti i tuoi iPhone e iPad tramite CloudKit. Non è necessaria nessuna configurazione aggiuntiva.
+          </div>
+          <div class="lang-block" data-lang="en" hidden>
+            Yes, if you have iCloud enabled on your device your library syncs automatically across all your iPhones and iPads via CloudKit. No additional setup is required.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span data-i18n="faq_q4">Come elimino un libro?</span></summary>
+        <div class="faq-answer">
+          <div class="lang-block" data-lang="it">
+            Nella lista della libreria, scorri verso sinistra sul libro che vuoi eliminare e tocca <strong>Elimina</strong>. In alternativa, apri il dettaglio del libro e usa il menu con i tre puntini in alto a destra.
+          </div>
+          <div class="lang-block" data-lang="en" hidden>
+            In the library list, swipe left on the book you want to delete and tap <strong>Delete</strong>. Alternatively, open the book detail and use the three-dot menu in the top right corner.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span data-i18n="faq_q5">Posso usare l'app senza connessione internet?</span></summary>
+        <div class="faq-answer">
+          <div class="lang-block" data-lang="it">
+            Sì. Tutti i tuoi dati sono salvati localmente sul dispositivo. La connessione serve solo per cercare nuovi libri tramite Google Books e per la sincronizzazione iCloud.
+          </div>
+          <div class="lang-block" data-lang="en" hidden>
+            Yes. All your data is stored locally on your device. An internet connection is only needed to search for new books via Google Books and for iCloud sync.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span data-i18n="faq_q6">Come contatto il supporto?</span></summary>
+        <div class="faq-answer">
+          <div class="lang-block" data-lang="it">
+            Scrivi a <a href="mailto:EMAIL_SUPPORTO">EMAIL_SUPPORTO</a>. Rispondiamo entro 48 ore lavorative.
+          </div>
+          <div class="lang-block" data-lang="en" hidden>
+            Write to <a href="mailto:EMAIL_SUPPORTO">EMAIL_SUPPORTO</a>. We reply within 48 business hours.
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <h2 data-i18n="contact_title">Hai altre domande?</h2>
+    <p data-i18n="contact_sub">Scrivici via email, rispondiamo entro 48 ore.</p>
+    <a href="mailto:EMAIL_SUPPORTO" class="contact-btn">
+      ✉️ <span data-i18n="contact_btn">Scrivi al supporto</span>
+    </a>
+    <p class="contact-note" data-i18n="contact_note">Risposta entro 48 ore lavorative</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+      <a href="support.html" data-i18n="footer_support">Supporto</a>
+      <a href="mailto:EMAIL_SUPPORTO" data-i18n="footer_contact">Contatti</a>
+    </div>
+    <p class="footer-copy" data-i18n="footer_copy">© 2026 Read It Now · Fatto con ❤️ in Italia</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>

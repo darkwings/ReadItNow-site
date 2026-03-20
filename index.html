@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read It Now</title>
+  <meta name="description" content="Read It Now — Tieni traccia dei libri che leggi. App iOS per organizzare la tua libreria personale.">
+  <meta property="og:title" content="Read It Now">
+  <meta property="og:description" content="Tieni traccia di ogni libro che leggi, stai leggendo o vuoi leggere.">
+  <meta property="og:image" content="assets/app-icon.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){
+      try {
+        var l = localStorage.getItem('rin_lang');
+        if (l === 'en') document.documentElement.setAttribute('data-lang', 'en');
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-icon">
+        <img src="assets/app-icon.png" alt="Read It Now" onerror="this.parentElement.textContent='📚'">
+      </div>
+      Read It Now
+    </a>
+    <div class="nav-links">
+      <a href="support.html" data-i18n="nav_support">Supporto</a>
+      <a href="privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="it" onclick="setLang('it')">IT</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="hero-badge">✦ <span data-i18n="hero_badge">Disponibile su App Store</span></div>
+      <h1 class="hero-title">
+        <span data-i18n="hero_title_1">La tua libreria,</span><br>
+        <span style="color: var(--color-primary);" data-i18n="hero_title_2">sempre con te</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">
+        Tieni traccia di ogni libro che leggi, stai leggendo o vuoi leggere. Sessioni di lettura, statistiche, recensioni — tutto in un'unica app.
+      </p>
+      <!-- TODO: sostituire href con link App Store reale prima del lancio -->
+      <a href="#" class="appstore-btn">
+        <span class="as-icon">🍎</span>
+        <div class="as-text">
+          <small data-i18n="hero_appstore_label">Scarica su</small>
+          <strong data-i18n="hero_appstore_store">App Store</strong>
+        </div>
+      </a>
+    </div>
+    <div class="hero-phone">
+      <div class="hero-phone-placeholder">
+        <div class="ph-icon">📱</div>
+        <p data-i18n="hero_phone_label">Anteprima</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <p class="section-label" data-i18n="features_label">Funzionalità</p>
+      <h2 class="section-title" data-i18n="features_title">Tutto quello che ti serve</h2>
+      <p class="section-sub" data-i18n="features_sub">Semplice, elegante, pensato per i lettori veri.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="background: var(--color-feature-icon-green);">📚</div>
+          <h3 data-i18n="feature_1_title">Libreria organizzata</h3>
+          <p data-i18n="feature_1_desc">Tre stati chiari — da leggere, in lettura, finito. Cerca, filtra e ordina con facilità.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: var(--color-feature-icon-cream);">⏱</div>
+          <h3 data-i18n="feature_2_title">Sessioni di lettura</h3>
+          <p data-i18n="feature_2_desc">Avvia una sessione e tieni traccia delle pagine lette. Cronologia completa delle sessioni.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: var(--color-feature-icon-green);">📊</div>
+          <h3 data-i18n="feature_3_title">Statistiche e progressi</h3>
+          <p data-i18n="feature_3_desc">Guarda quante pagine hai letto, il tempo dedicato e la tua crescita nel tempo.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: var(--color-feature-icon-cream);">⭐</div>
+          <h3 data-i18n="feature_4_title">Recensioni personali</h3>
+          <p data-i18n="feature_4_desc">Lascia un voto e un tuo commento ai libri finiti. La tua libreria, la tua voce.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="screenshots">
+    <div class="container">
+      <p class="section-label" data-i18n="screenshots_label">Schermate</p>
+      <h2 class="section-title" data-i18n="screenshots_title">Vedi l'app in azione</h2>
+      <p class="section-sub" data-i18n="screenshots_sub">Screenshot in arrivo dopo il lancio.</p>
+    </div>
+    <div class="screenshots-strip">
+      <div class="screen-item"><span data-i18n="screen_1">Libreria</span></div>
+      <div class="screen-item"><span data-i18n="screen_2">In lettura</span></div>
+      <div class="screen-item"><span data-i18n="screen_3">Sessione</span></div>
+      <div class="screen-item"><span data-i18n="screen_4">Statistiche</span></div>
+      <div class="screen-item"><span data-i18n="screen_5">Dettaglio libro</span></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+      <a href="support.html" data-i18n="footer_support">Supporto</a>
+      <a href="mailto:EMAIL_SUPPORTO" data-i18n="footer_contact">Contatti</a>
+    </div>
+    <p class="footer-copy" data-i18n="footer_copy">© 2026 Read It Now · Fatto con ❤️ in Italia</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
