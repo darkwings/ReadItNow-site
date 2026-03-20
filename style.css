@@ -263,6 +263,7 @@ footer {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  justify-content: center;
 }
 .screenshots-strip::-webkit-scrollbar { display: none; }
 .screen-item {
