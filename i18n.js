@@ -45,7 +45,7 @@ const translations = {
     footer_privacy:   'Privacy Policy',
     footer_support:   'Supporto',
     footer_contact:   'Contatti',
-    footer_copy:      '© 2026 Read It Now · Fatto con ❤️ in Italia',
+    footer_copy:      '© 2026 Franco Torriani · Read It Now · Fatto con ❤️ in Italia',
 
     // SUPPORT — mini hero
     support_title: 'Supporto',
@@ -113,7 +113,7 @@ const translations = {
     footer_privacy:   'Privacy Policy',
     footer_support:   'Support',
     footer_contact:   'Contact',
-    footer_copy:      '© 2026 Read It Now · Made with ❤️ in Italy',
+    footer_copy:      '© 2026 Franco Torriani · Read It Now · Made with ❤️ in Italy',
 
     // SUPPORT — mini hero
     support_title: 'Support',
