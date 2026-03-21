@@ -157,6 +157,11 @@ function setLang(lang) {
     el.hidden = el.dataset.lang !== lang;
   });
 
+  // Update language-specific images
+  document.querySelectorAll('[data-src-' + lang + ']').forEach(el => {
+    el.src = el.dataset['src' + lang.charAt(0).toUpperCase() + lang.slice(1)];
+  });
+
   // Update html lang attribute
   document.documentElement.lang = lang;
 
