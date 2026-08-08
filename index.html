@@ -11,6 +11,9 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/app-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>
     (function(){
@@ -43,70 +46,24 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div>
-      <div class="hero-badge">✦ <span data-i18n="hero_badge">Novità — Read It Now 2.0</span></div>
+    <div class="hero-copy">
+      <div class="catalog-label">
+        <span class="punch"></span>
+        <span class="catalog-code">028 · READ IT NOW · ED. 2.0</span>
+      </div>
       <h1 class="hero-title">
         <span data-i18n="hero_title_1">La tua libreria,</span><br>
-        <span style="color: var(--color-primary);" data-i18n="hero_title_2">sempre con te</span>
+        <em data-i18n="hero_title_2">sempre con te</em>
       </h1>
       <p class="hero-sub" data-i18n="hero_sub">
         Traccia ogni libro che leggi: sessioni cronometrate, statistiche complete, sfide annuali e il tuo riepilogo di fine anno.
       </p>
-      <a href="https://apps.apple.com/us/app/read-it-now/id6758524688" target="_blank" rel="noopener" class="appstore-badge-link">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="appstore-badge">
-      </a>
-    </div>
-    <div class="hero-phone">
-      <img src="assets/screenshots/v2/it/01.png" alt="Read It Now" class="hero-phone-img" data-src-it="assets/screenshots/v2/it/01.png" data-src-en="assets/screenshots/v2/en/01.png">
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="features">
-    <div class="container">
-      <p class="section-label" data-i18n="features_label">Funzionalità</p>
-      <h2 class="section-title" data-i18n="features_title">Tutto quello che ti serve</h2>
-      <p class="section-sub" data-i18n="features_sub">Semplice, elegante, pensato per i lettori veri.</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon" style="background: var(--color-feature-icon-green);">📚</div>
-          <h3 data-i18n="feature_1_title">Libreria organizzata</h3>
-          <p data-i18n="feature_1_desc">Tre stati chiari — da leggere, in lettura, finito. Cerca, filtra e ordina con facilità.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon" style="background: var(--color-feature-icon-cream);">⏱</div>
-          <h3 data-i18n="feature_2_title">Timer di lettura</h3>
-          <p data-i18n="feature_2_desc">Cronometra ogni sessione e aggiorna le pagine lette in tempo reale, libro per libro.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon" style="background: var(--color-feature-icon-green);">📊</div>
-          <h3 data-i18n="feature_3_title">Statistiche complete</h3>
-          <p data-i18n="feature_3_desc">Libri, ore, velocità di lettura, generi e autori preferiti: tutto sotto controllo.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon" style="background: var(--color-feature-icon-cream);">🎯</div>
-          <h3 data-i18n="feature_4_title">Sfida di lettura</h3>
-          <p data-i18n="feature_4_desc">Fissa un obiettivo annuale di libri e segui i progressi con proiezioni in tempo reale.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon" style="background: var(--color-feature-icon-green);">🎁</div>
-          <h3 data-i18n="feature_5_title">Riepilogo annuale</h3>
-          <p data-i18n="feature_5_desc">Il riepilogo della tua lettura a fine anno, pronto da condividere.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon" style="background: var(--color-feature-icon-cream);">💬</div>
-          <h3 data-i18n="feature_6_title">Citazioni e note</h3>
-          <p data-i18n="feature_6_desc">Salva le frasi che ami e le tue riflessioni, e condividile in un tocco.</p>
-        </div>
+      <div class="hero-actions">
+        <a href="https://apps.apple.com/us/app/read-it-now/id6758524688" target="_blank" rel="noopener" class="appstore-badge-link">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="appstore-badge">
+        </a>
+        <span class="ink-stamp" data-i18n="hero_badge">Nuovo</span>
       </div>
-    </div>
-  </section>
-
-  <!-- SCREENSHOTS -->
-  <section class="screenshots">
-    <div class="container">
-      <p class="section-label" data-i18n="screenshots_label">Schermate</p>
-      <h2 class="section-title" data-i18n="screenshots_title">Vedi l'app in azione</h2>
     </div>
 
     <div class="carousel" id="carousel">
@@ -159,8 +116,49 @@
       </button>
     </div>
 
-    <p class="carousel-caption" id="carouselCaption" data-i18n="screen_1">In lettura</p>
+    <p class="carousel-caption" id="carouselCaption">01 — In lettura</p>
     <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <p class="section-label" data-i18n="features_label">Funzionalità</p>
+      <h2 class="section-title" data-i18n="features_title">Tutto quello che ti serve</h2>
+      <p class="section-sub" data-i18n="features_sub">Semplice, elegante, pensato per i lettori veri.</p>
+      <div class="features-grid">
+        <div class="index-card">
+          <div class="index-card-head"><span class="punch"></span><span class="dewey">020.1</span></div>
+          <h3 data-i18n="feature_1_title">Libreria organizzata</h3>
+          <p data-i18n="feature_1_desc">Tre stati chiari — da leggere, in lettura, finito. Cerca, filtra e ordina con facilità.</p>
+        </div>
+        <div class="index-card">
+          <div class="index-card-head"><span class="punch"></span><span class="dewey">529</span></div>
+          <h3 data-i18n="feature_2_title">Timer di lettura</h3>
+          <p data-i18n="feature_2_desc">Cronometra ogni sessione e aggiorna le pagine lette in tempo reale, libro per libro.</p>
+        </div>
+        <div class="index-card">
+          <div class="index-card-head"><span class="punch"></span><span class="dewey">310</span></div>
+          <h3 data-i18n="feature_3_title">Statistiche complete</h3>
+          <p data-i18n="feature_3_desc">Libri, ore, velocità di lettura, generi e autori preferiti: tutto sotto controllo.</p>
+        </div>
+        <div class="index-card">
+          <div class="index-card-head"><span class="punch"></span><span class="dewey">796</span></div>
+          <h3 data-i18n="feature_4_title">Sfida di lettura</h3>
+          <p data-i18n="feature_4_desc">Fissa un obiettivo annuale di libri e segui i progressi con proiezioni in tempo reale.</p>
+        </div>
+        <div class="index-card">
+          <div class="index-card-head"><span class="punch"></span><span class="dewey">030</span></div>
+          <h3 data-i18n="feature_5_title">Riepilogo annuale</h3>
+          <p data-i18n="feature_5_desc">Il riepilogo della tua lettura a fine anno, pronto da condividere.</p>
+        </div>
+        <div class="index-card">
+          <div class="index-card-head"><span class="punch"></span><span class="dewey">082</span></div>
+          <h3 data-i18n="feature_6_title">Citazioni e note</h3>
+          <p data-i18n="feature_6_desc">Salva le frasi che ami e le tue riflessioni, e condividile in un tocco.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -197,7 +195,9 @@
       var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll('.carousel-dot'));
 
       function currentLang() {
-        return document.documentElement.lang === 'en' ? 'en' : 'it';
+        if (document.documentElement.lang === 'en') return 'en';
+        try { if (localStorage.getItem('rin_lang') === 'en') return 'en'; } catch (e) {}
+        return 'it';
       }
 
       function setActive(index) {
@@ -209,10 +209,9 @@
           dot.classList.toggle('is-active', i === index);
         });
         var key = slides[index].dataset.captionKey;
-        caption.dataset.i18n = key;
-        if (typeof translations !== 'undefined') {
-          caption.textContent = translations[currentLang()][key];
-        }
+        var num = String(index + 1).padStart(2, '0');
+        var text = (typeof translations !== 'undefined') ? translations[currentLang()][key] : '';
+        caption.innerHTML = '<span class="idx">' + num + '</span> — ' + text;
       }
 
       function goTo(index) {

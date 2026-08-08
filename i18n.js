@@ -10,10 +10,10 @@ const translations = {
     nav_privacy:  'Privacy',
 
     // HOME — hero
-    hero_badge:    'Novità — Read It Now 2.0',
+    hero_badge:    'Nuovo · v2.0',
     hero_title_1:  'La tua libreria,',
     hero_title_2:  'sempre con te',
-    hero_sub:      'Traccia ogni libro che leggi: sessioni cronometrate, statistiche complete, sfide annuali e il tuo riepilogo di fine anno.',
+    hero_sub:      'Traccia ogni libro che leggi: sessioni cronometrate, statistiche complete, sfide annuali e il tuo riepilogo di fine anno.',
     hero_appstore_label: 'Scarica su',
     hero_appstore_store: 'App Store',
     hero_phone_label: 'Anteprima',
@@ -36,9 +36,6 @@ const translations = {
     feature_6_desc:    'Salva le frasi che ami e le tue riflessioni, e condividile in un tocco.',
 
     // HOME — screenshots
-    screenshots_label: 'Schermate',
-    screenshots_title: 'Vedi l\'app in azione',
-    screenshots_sub:   'Le novità della versione 2.0.',
     screen_1: 'In lettura',
     screen_2: 'Progresso di lettura',
     screen_3: 'Timer sessione',
@@ -93,7 +90,7 @@ const translations = {
     nav_privacy:  'Privacy',
 
     // HOME — hero
-    hero_badge:    'New — Read It Now 2.0',
+    hero_badge:    'New · v2.0',
     hero_title_1:  'Your library,',
     hero_title_2:  'always with you',
     hero_sub:      'Track every book you read: timed sessions, full stats, yearly challenges, and your end-of-year recap.',
@@ -119,9 +116,6 @@ const translations = {
     feature_6_desc:    'Save the lines you love and your thoughts, and share them in one tap.',
 
     // HOME — screenshots
-    screenshots_label: 'Screenshots',
-    screenshots_title: 'See the app in action',
-    screenshots_sub:   'What\'s new in version 2.0.',
     screen_1: 'Currently reading',
     screen_2: 'Reading progress',
     screen_3: 'Session timer',
